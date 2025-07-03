@@ -12,9 +12,11 @@ Use custom headers to reply in threads.
 If you plug in an IMAP trigger, plug it into "Better Send Mail" and add these expressions to the custom headers.
 
 Name: References
+
 Value: `{{ $json.metadata.references ? $json.metadata.references + ' ' + $json.metadata['message-id'] : '' }}`
 
 Name: In-Reply-To
+
 Value: `{{ $json.metadata['message-id'] }}`
 
 ❗IMPORTANT
