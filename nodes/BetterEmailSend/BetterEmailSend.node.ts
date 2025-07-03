@@ -10,12 +10,12 @@ export class BetterEmailSend extends VersionedNodeType {
 			name: 'betterEmailSend',
 			icon: 'fa:envelope',
 			group: ['output'],
-			defaultVersion: 2.2,
+			defaultVersion: 2,
 			description: 'Sends an email using SMTP protocol allowing custom headers',
 		};
 
 		const nodeVersions: IVersionedNodeType['nodeVersions'] = {
-			2.2: new EmailSendV2(baseDescription),
+			2: new EmailSendV2(baseDescription),
 		};
 
 		super(nodeVersions, baseDescription);

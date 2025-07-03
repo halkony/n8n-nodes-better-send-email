@@ -18,7 +18,7 @@ export const versionDescription: INodeTypeDescription = {
 	name: 'betterEmailSend',
 	icon: 'fa:envelope',
 	group: ['output'],
-	version: [2.2],
+	version: [2],
 	description: 'Sends an email using SMTP protocol',
 	defaults: {
 		name: 'Better Send Email',
